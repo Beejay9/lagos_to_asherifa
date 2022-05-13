@@ -24,7 +24,7 @@ class Quiz extends StatelessWidget {
         ),
         ...(questions[questionNumber]['answerKey'] as List<Map<String, Object>>)
             .map((question) {
-          return Answer(() => forOnpressed(question['score']), question['score'] as String);
+          return Answer(() => forOnpressed, question['score'] as String);
         }).toList()
       ],
     );
