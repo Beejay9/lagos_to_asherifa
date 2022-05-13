@@ -7,7 +7,7 @@ import './thirdfile.dart';
 class Quiz extends StatelessWidget {
   final List<Map<String, Object>> questions;
   final int questionNumber;
-  final VoidCallback forOnpressed;
+ final ValueChanged<int> forOnpressed;
 
   Quiz({
     required this.questions,
